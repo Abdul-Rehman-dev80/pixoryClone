@@ -7,7 +7,7 @@ export default function Hero() {
           <div className="flex items-center bg-white rounded-full px-6 py-3 font-extrabold">
             <div className="flex -space-x-2 mr-[10px]">
               {happyClients.map((client) => (
-                <div className="bg-blue-500 w-[30px] h-[30px] rounded-full border border-2 border-gray-300"></div>
+                <div key={client} className="bg-blue-500 w-[30px] h-[30px] rounded-full border border-2 border-gray-300"></div>
               ))}
             </div>
             <p className="text-sm font-extrabold">10,000+ Happy Customers</p>

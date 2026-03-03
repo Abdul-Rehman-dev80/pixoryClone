@@ -1,6 +1,7 @@
 import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import UpperNav from "./Components/UpperNav";
+import Section1 from "./Components/Section1";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <UpperNav />
       <NavBar />
       <Hero />
+      <Section1 />
     </div>
   );
 }

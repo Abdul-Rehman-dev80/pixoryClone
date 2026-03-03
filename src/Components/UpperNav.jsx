@@ -21,8 +21,9 @@ export default function UpperNav() {
       </div>
       <div className="w-[33%] flex items-center justify-center">
         <span className="mr-2 flex gap-1">
-          {stars.map(() => (
+          {stars.map((item) => (
             <svg
+              key={item}
               width="14"
               height="14"
               viewBox="0 0 14 14"
