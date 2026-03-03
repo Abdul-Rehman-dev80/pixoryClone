@@ -2,7 +2,7 @@ export default function NavBar() {
   return (
     <div className="flex justify-around items-center border-b border-gray-300 py-3">
       <div className="w-[250px]">
-        <ul className="flex justify-between">
+        <ul className="flex justify-between items-center text-[13px] text-gray-500 font-bold">
           <li>Home</li>
           <li>Shop All</li>
           <li>About</li>
@@ -16,7 +16,7 @@ export default function NavBar() {
         />
       </div>
       <div className="flex justify-around items-center w-[250px]">
-        <div className="border border-black py-1.5 px-5">$ USD</div>
+        <div className="border border-black py-1.5 px-5 text-gray-600 font-bold">$ USD</div>
         <div>
           <svg
             data-v-e063cca5=""
