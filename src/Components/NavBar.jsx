@@ -10,13 +10,12 @@ export default function NavBar() {
         </ul>
       </div>
       <div className="font-bold text-xl w-[150px] mx-[100px]">
-        <img
-          src="https://www.pixoryofficial.com/_ipx/f_webp&fit_contain/https://storage.googleapis.com/pbx-sw-digitalorca/media/b8/5c/8b/1752225016/logo.png"
-          alt=""
-        />
+        <img src="/images/logo.png" alt="" />
       </div>
       <div className="flex justify-around items-center w-[250px]">
-        <div className="border border-black py-1.5 px-5 text-gray-600 font-bold">$ USD</div>
+        <div className="border border-black py-1.5 px-5 text-gray-600 font-bold">
+          $ USD
+        </div>
         <div>
           <svg
             data-v-e063cca5=""
