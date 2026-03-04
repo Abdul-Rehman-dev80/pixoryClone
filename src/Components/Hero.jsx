@@ -1,14 +1,11 @@
 export default function Hero() {
-  const happyClients = [1, 2, 3, 4, 5];
   return (
     <div className="bg-[url('/images/bg.png')] bg-cover bg-center h-screen">
       <div className="flex items-center justify-center">
         <div className="flex flex-col items-center gap-8 text-center mt-[125px]">
           <div className="flex items-center bg-white rounded-full px-6 py-3 font-extrabold">
             <div className="flex -space-x-2 mr-[10px]">
-              {happyClients.map((client) => (
-                <div key={client} className="bg-blue-500 w-[30px] h-[30px] rounded-full border border-2 border-gray-300"></div>
-              ))}
+              <img src="/images/heroCardImg.png" alt="" />
             </div>
             <p className="text-sm font-extrabold">10,000+ Happy Customers</p>
           </div>
