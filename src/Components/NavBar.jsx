@@ -1,6 +1,6 @@
 export default function NavBar() {
   return (
-    <div className="flex justify-around items-center border-b border-gray-300 py-3">
+    <div className="flex justify-between mx-[100px] items-center border-b border-gray-300 py-3">
       <div className="w-[250px]">
         <ul className="flex justify-between items-center text-[13px] text-gray-500 font-bold">
           <li>Home</li>

@@ -95,54 +95,58 @@ export default function Section5() {
 
   return (
     <div className="pt-[30px]">
-      <div className="flex px-[20px] items-center">
-        <div className="w-[50%]">
-          <h1 className="font-glitz font-extrabold text-[40px] leading-[50px] mt-[20px] mb-[30px]">
-            faq
-          </h1>
-          <p className="leading-[27px] text-black text-[16px]">
-            Find answers to commonly asked questions about <br />
-            Pixory photobooks and the creation process.
-          </p>
-          <div className="mr-[50px]">
-            {accordionData.map((item, index) => (
-              <div key={index}>
-                <div
-                  onClick={() => toggleAccordion(index)}
-                  className="flex justify-between items-center px-6 py-3 border-b border-gray-400"
-                >
-                  <h2 className="leading-[27px] text-black text-[16px]">
-                    {item.question}
-                  </h2>
-                  <button className="text-[40px] font-bold">
-                    {item.isOpen ? "-" : "+"}
-                  </button>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex px-[20px] items-center">
+          <div className="w-[50%]">
+            <h1 className="font-glitz font-extrabold text-[40px] leading-[50px] mt-[20px] mb-[30px]">
+              faq
+            </h1>
+            <p className="leading-[27px] text-black text-[16px]">
+              Find answers to commonly asked questions about <br />
+              Pixory photobooks and the creation process.
+            </p>
+            <div className="mr-[50px]">
+              {accordionData.map((item, index) => (
+                <div key={index}>
+                  <div
+                    onClick={() => toggleAccordion(index)}
+                    className="flex justify-between items-center px-6 py-3 border-b border-gray-400"
+                  >
+                    <h2 className="leading-[27px] text-black text-[16px]">
+                      {item.question}
+                    </h2>
+                    <button className="text-[40px] font-bold">
+                      {item.isOpen ? "-" : "+"}
+                    </button>
+                  </div>
+                  {item.isOpen && (
+                    <p
+                      className="text-[15px] pt-[10px] px-6 py-3"
+                      dangerouslySetInnerHTML={{ __html: item.answer }}
+                    />
+                  )}
                 </div>
-                {item.isOpen && (
-                  <p
-                    className="text-[15px] pt-[10px] px-6 py-3"
-                    dangerouslySetInnerHTML={{ __html: item.answer }}
-                  />
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="w-[50%]">
-          <img src="/images/image10.png" alt="" />
+          <div className="w-[50%]">
+            <img src="/images/image10.png" alt="" />
+          </div>
         </div>
       </div>
       {/* --------------------------- section break ----------------- */}
-      <div className="flex justify-around bg-gray-100 py-[30px] my-[50px]">
-        {barData.map((item, index) => (
-          <div key={index} className="w-[27%] text-center">
-            <div className="flex justify-center">
-              <img src={item.image} alt="" />
+      <div className=" bg-gray-100 py-[30px] my-[50px]">
+        <div className="flex justify-around max-w-7xl mx-auto px-6">
+          {barData.map((item, index) => (
+            <div key={index} className="w-[27%] text-center">
+              <div className="flex justify-center">
+                <img src={item.image} alt="" />
+              </div>
+              <h3 className="font-bold pb-[10px] py-[10px]">{item.name}</h3>
+              <p className="text-[15px] leading-[23px]">{item.description}</p>
             </div>
-            <h3 className="font-bold pb-[10px] py-[10px]">{item.name}</h3>
-            <p className="text-[15px] leading-[23px]">{item.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
