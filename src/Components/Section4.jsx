@@ -24,7 +24,7 @@ export default function Section4() {
     },
   ];
   return (
-    <div className="bg-gray-100 py-[50px] flex flex-col justify-center items-center text-center">
+    <div className="bg-gray-100 py-[50px] flex flex-col justify-center items-center text-center pb-[100px]">
       <div className="flex border w-max border-gray-300 rounded-full px-5 py-3 items-center">
         <div className="flex mr-[15px]">
           {stars.map((star) => (
