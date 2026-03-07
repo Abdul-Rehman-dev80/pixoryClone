@@ -2,7 +2,7 @@ export default function UpperNav() {
   const stars = [1, 2, 3, 4, 5];
   return (
     <div className="bg-black text-white ">
-      <div className="max-w-7xl mx-auto  flex justify-between p-0.5 text-sm">
+      <div className="max-w-7xl mx-auto  flex md:justify-between justify-center p-0.5 text-sm">
         <div className="w-[33%] flex items-center justify-center">
           <span className="mr-2">
             <svg
@@ -20,7 +20,7 @@ export default function UpperNav() {
           </span>
           <p>Fast Shipping</p>
         </div>
-        <div className="w-[33%] flex items-center justify-center">
+        <div className="w-[33%] md:flex items-center hidden justify-center">
           <span className="mr-2 flex gap-1">
             {stars.map((item) => (
               <svg
@@ -40,7 +40,7 @@ export default function UpperNav() {
           </span>
           Over 10,000+ 5 Star Reviews
         </div>
-        <div className="w-[33%] flex items-center justify-center">
+        <div className="w-[33%] md:flex hidden items-center justify-center">
           <span className="mr-2">
             <svg
               width="21"

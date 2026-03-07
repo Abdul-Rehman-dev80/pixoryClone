@@ -1,11 +1,11 @@
 export default function Section3() {
   return (
     <div className="my-[30px] bg-gray-100">
-      <div className="flex max-w-7xl mx-auto px-6">
-        <div className="w-[50%] mx-[30px]">
+      <div className="flex md:flex-row flex-col max-w-7xl mx-auto px-6">
+        <div className="md:w-[50%] md:mx-[30px]">
           <img src="/images/image1.png" alt="" />
         </div>
-        <div className="w-[45%] mx-[30px] flex flex-col items-start justify-center">
+        <div className="md:w-[45%] mx-[30px] pt-[30px] flex flex-col items-start justify-center">
           <div className="flex items-center bg-white rounded-full px-4 py-1.5 font-extrabold border-2 border-black w-max">
             <svg
               width="20"

@@ -1,3 +1,5 @@
+import SmoothSlider from "./ImageSlider";
+
 export default function Section2() {
   const cardContent = [
     {
@@ -19,14 +21,23 @@ export default function Section2() {
         "Easlily change fonts, backgrounds, colors, shapes, stickers and more to make it truly yours and memorable!",
     },
   ];
+  const sliderData = cardContent.map((card, index) => ({
+    content: (
+      <div className="w-full text-center" key={index}>
+        <img src={card.image} alt={card.title} className="mx-auto mb-4" />
+        <h2 className="font-bold text-lg mb-2">{card.title}</h2>
+        <p className="text-gray-600 text-sm">{card.description}</p>
+      </div>
+    ),
+  }));
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-center pt-[70px]">
-          <h1 className="font-glitz w-[40%] font-extrabold text-[40px] ml-[100px] leading-[50px]">
+        <div className="flex md:flex-row flex-col justify-center md:pt-[70px] pt-[30px]">
+          <h1 className="font-glitz md:w-[40%] font-extrabold text-[40px] md:ml-[100px] leading-[50px]">
             it's easy as 1, 2, 3 to create your photobook
           </h1>
-          <p className="leading-[33px] w-[42%] text-[19px] text-gray-600">
+          <p className="leading-[33px] md:w-[42%] text-[19px] text-gray-600">
             With Pixory, you can easily transform your holiday photos into a
             stunning photobook that captures the essence of your journey. Simply
             upload your images, customize the layout, and add captions to create
@@ -34,14 +45,17 @@ export default function Section2() {
             moments.
           </p>
         </div>
-        <div className="flex justify-around text-center py-[100px] px-[50px]">
+        <div className="hidden md:flex flex-row justify-around text-center py-[100px] px-[50px]">
           {cardContent.map((card, index) => (
-            <div className="w-[400px]" key={index}>
+            <div className="w-[400px] md:mb-0 mb-[40px]" key={index}>
               <img src={card.image} alt={card.title} />
               <h2 className="font-bold">{card.title}</h2>
               <p>{card.description}</p>
             </div>
           ))}
+        </div>
+        <div className="md:hidden block text-center">
+          <SmoothSlider data={sliderData} />
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 export default function Section1() {
   return (
     <div>
-      <h1 className="bg-gray-200 text-center py-8 font-glitz font-extrabold text-2xl">
+      <h1 className="bg-gray-200 text-center md:py-8 py-[10px] font-glitz font-extrabold text-2xl">
         #1 rated in photo books
       </h1>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex my-[30px]">
-          <div className="w-[41%] mx-[75px]">
+        <div className="flex md:flex-row flex-col-reverse my-[30px]">
+          <div className="md:w-[41%] md:mx-[75px]">
             <h1 className="font-glitz font-extrabold text-[40px] leading-[50px] mt-[80px] mb-[30px]">
               preserve your <br /> adventures in <br /> stunning <br />{" "}
               photobooks
@@ -17,7 +17,7 @@ export default function Section1() {
               last a lifetime. Each book is meticulously crafted to reflect the
               unique aesthetic and sentimental value of your experiences.
             </p>
-            <div className="flex gap-2 mt-[40px] ml-[20px]">
+            <div className="flex md:flex-row flex-col gap-2 mt-[40px] md:ml-[20px]">
               <button className="bg-black px-[60px] py-[23px] rounded-[10px] text-white font-extrabold text-sm hover:bg-white hover:text-black border border-2 border-black">
                 Start My Design
               </button>
@@ -26,15 +26,15 @@ export default function Section1() {
               </button>
             </div>
           </div>
-          <div className="w-[50%] mx-[30px]">
+          <div className="md:w-[50%] md:mx-[30px]">
             <img src="/images/image1.png" alt="" />
           </div>
         </div>
-        <div className="flex my-[30px] mt-[50px]">
-          <div className="w-[50%] mx-[30px]">
+        <div className="flex md:flex-row flex-col my-[30px] mt-[50px]">
+          <div className="md:w-[50%] md:mx-[30px]">
             <img src="/images/image2.webp" alt="" />
           </div>
-          <div className="w-[41%] mx-[75px]">
+          <div className="md:w-[41%] md:mx-[75px]">
             <h1 className="font-glitz text-center font-extrabold text-[30px] leading-[50px] mt-[80px] mb-[30px]">
               discover the pixory advantage
             </h1>

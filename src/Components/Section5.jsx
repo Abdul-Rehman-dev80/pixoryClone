@@ -95,9 +95,9 @@ export default function Section5() {
 
   return (
     <div className="pt-[30px]">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex px-[20px] items-center">
-          <div className="w-[50%]">
+      <div className="max-w-7xl mx-auto md:px-6">
+        <div className="flex md:flex-row flex-col px-[20px] items-center">
+          <div className="md:w-[50%]">
             <h1 className="font-glitz font-extrabold text-[40px] leading-[50px] mt-[20px] mb-[30px]">
               faq
             </h1>
@@ -105,7 +105,7 @@ export default function Section5() {
               Find answers to commonly asked questions about <br />
               Pixory photobooks and the creation process.
             </p>
-            <div className="mr-[50px]">
+            <div className="md:mr-[50px]">
               {accordionData.map((item, index) => (
                 <div key={index}>
                   <div
@@ -129,7 +129,7 @@ export default function Section5() {
               ))}
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className="md:w-[50%]">
             <img src="/images/image10.png" alt="" />
           </div>
         </div>
